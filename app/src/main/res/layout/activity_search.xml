@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.brand.alarousguide.CustomerActivities.SearchActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B10069">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:contentDescription="@string/des"
+                android:src="@drawable/icon_back_arrow_english" />
+
+            <TextView
+                android:id="@+id/tv_myProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/place_autocomplete_prediction_primary_text"
+                android:padding="5dp"
+                android:text="@string/title_activity_search"
+                android:textColor="#FFF" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_defualt"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.company.brand.alarousguide.CustomerActivities.SearchActivity"
+        tools:showIn="@layout/activity_search">
+        <LinearLayout
+            android:padding="@dimen/place_autocomplete_button_padding"
+            android:layout_margin="@dimen/place_autocomplete_prediction_primary_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff">
+            <EditText
+                android:id="@+id/ET_search_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_silver"
+                android:padding="8dp"
+                android:hint="@string/search_by_name"
+                android:layout_marginBottom="@dimen/place_autocomplete_prediction_primary_text"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/border_silver"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:layout_marginBottom="@dimen/place_autocomplete_prediction_primary_text"
+                >
+                <Spinner
+                    android:id="@+id/spinner_sections"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/country"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/border_silver"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:layout_marginBottom="@dimen/place_autocomplete_prediction_primary_text"
+                >
+                <Spinner
+                    android:id="@+id/spinner_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/border_silver"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:layout_marginBottom="@dimen/place_autocomplete_prediction_primary_text"
+                >
+                <Spinner
+                    android:id="@+id/spinner_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_determine_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/determine_price"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fromTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/from" />
+
+                <EditText
+                    android:id="@+id/from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/border_silver" />
+
+                <TextView
+                    android:id="@+id/toTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/to" />
+
+                <EditText
+                    android:id="@+id/to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_marginEnd="25dp"
+                    android:padding="7dp"
+                    android:background="@drawable/border_silver" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_marginTop="@dimen/place_autocomplete_prediction_primary_text"
+                android:layout_width="match_parent"
+                android:background="@drawable/button_blue"
+                android:textColor="#fff"
+                android:text="@string/title_activity_search"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "955153223326",
+    "firebase_url": "https://rose-9c48e.firebaseio.com",
+    "project_id": "rose-9c48e",
+    "storage_bucket": "rose-9c48e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955153223326:android:76d45d1be537ba3c",
+        "android_client_info": {
+          "package_name": "com.company.brand.alarousguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955153223326-lvfbbcdfc01hflp0tgts319fll74d8qu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.brand.alarousguide",
+            "certificate_hash": "9f0812454665c8d4b51b5c9f1942840ee782abd2"
+          }
+        },
+        {
+          "client_id": "955153223326-qgqpij4764294e2jcjko3uap8707819g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8_qCTHPv-KC-W9f5LOJWABddYAmQLXiQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955153223326-qgqpij4764294e2jcjko3uap8707819g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "955153223326-c0l5etdjecksgq7i1clrrgevokn4n4km.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Brand.Arous"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

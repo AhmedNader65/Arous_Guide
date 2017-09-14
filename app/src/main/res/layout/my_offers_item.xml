@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:maxHeight="200dp"
+    android:layout_height="180dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/facebook_icon"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/place_autocomplete_prediction_primary_text"
+                android:paddingTop="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/name"
+                    android:layout_marginStart="8dp"
+                    tools:text="فستان ابيض سوارية"
+                    />
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/name"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/offer_num"
+                    tools:text="عرض رقم : 123124"
+                    />
+                <LinearLayout
+                    android:layout_below="@id/offer_num"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/offer_duration"
+                    tools:text="مدة العرض : 6 ايام"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/offer_ends"
+                    android:textSize="12dp"
+                    tools:text="سينتهي بعد : 4 ايام"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/place_autocomplete_prediction_primary_text"
+
+                    android:orientation="horizontal">
+                <RatingBar
+                    android:layout_gravity="left"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/starts"
+                    android:layout_marginStart="8dp"
+                    android:numStars="5"
+                    />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/edit"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="@dimen/place_autocomplete_prediction_primary_text"
+                            android:src="@drawable/edit"/>
+                        <ImageView
+                            android:id="@+id/delete"
+                            android:layout_width="30dp"
+                            android:layout_marginEnd="@dimen/place_autocomplete_prediction_primary_text"
+                            android:layout_height="30dp"
+                            android:src="@drawable/delete"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+</android.support.v7.widget.CardView>

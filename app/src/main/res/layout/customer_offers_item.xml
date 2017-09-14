@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/place_autocomplete_prediction_horizontal_margin"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/facebook_icon"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_marginLeft="@dimen/place_autocomplete_prediction_primary_text"
+                android:paddingTop="@dimen/place_autocomplete_prediction_primary_text"
+                android:gravity="left"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="@dimen/place_autocomplete_prediction_primary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/name"
+                    tools:text="فستان ابيض سوارية"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/place_autocomplete_prediction_primary_text"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".8"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/place_autocomplete_prediction_primary_text"
+                            android:id="@+id/offer_num"
+                            tools:text="عرض رقم : 123124"
+                            />
+                     <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/starts"
+                    android:numStars="5"
+                     />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight=".8"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/details_btn"
+                        android:text="@string/details_btn"
+                        android:minHeight="0dp"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:minWidth="0dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/special"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/special_offer"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

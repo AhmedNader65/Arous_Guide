@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="navCustomerTitles">
+        <item>@string/profile</item>
+        <item>@string/alerts</item>
+        <item>@string/special_offers</item>
+        <item>@string/gifts</item>
+        <item>@string/share_app</item>
+        <item>@string/terms_ans_conditions</item>
+        <item>@string/logout</item>
+    </array>
+
+    <array name="navTraderTitles">
+        <item>@string/profile</item>
+        <item>@string/advertising_method</item>
+        <item>@string/add_offer</item>
+        <item>@string/gifts</item>
+        <item>@string/alerts</item>
+        <item>@string/share_app</item>
+        <item>@string/terms_ans_conditions</item>
+        <item>@string/logout</item>
+    </array>
+</resources>

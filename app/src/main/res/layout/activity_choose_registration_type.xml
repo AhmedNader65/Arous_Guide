@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_defualt"
+    tools:context="com.company.brand.alarousguide.Activities.ChooseRegistrationTypeActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="end">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:contentDescription="@string/des"
+        android:src="@drawable/icon_back_english"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/des"
+        android:src="@drawable/logo_app"/>
+
+    <Button
+        android:id="@+id/bt_customerAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/customer_account"
+        android:textColor="#FFF"
+        android:textSize="13sp"
+        android:background="@drawable/button_nbety"/>
+
+    <Button
+        android:id="@+id/bt_traderAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/trader_account"
+        android:textColor="#FFF"
+        android:textSize="13sp"
+        android:background="@drawable/button_blue"/>
+
+</LinearLayout>

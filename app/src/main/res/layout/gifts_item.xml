@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/place_autocomplete_prediction_horizontal_margin"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/facebook_icon"
+                android:layout_height="100dp" />
+            <LinearLayout
+                android:layout_marginStart="@dimen/place_autocomplete_prediction_primary_text"
+                android:paddingTop="@dimen/place_autocomplete_prediction_primary_text"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="start"
+                    android:layout_marginBottom="@dimen/place_autocomplete_prediction_primary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/name"
+                    tools:text="فستان ابيض سوارية"
+                    />
+
+                <TextView
+                    android:gravity="start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/place_autocomplete_prediction_primary_text"
+                    android:id="@+id/link"
+                    android:textSize="16sp"
+                    android:textColor="#00f"
+                    tools:text="عرض رقم : 123124"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+</android.support.v7.widget.CardView>

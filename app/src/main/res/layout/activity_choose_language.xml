@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.brand.alarousguide.Activities.ChooseLanguageActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_app"/>
+
+    <Button
+        android:id="@+id/bt_arabic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/arabic"
+        android:background="@drawable/button_nbety"/>
+
+        <Button
+            android:id="@+id/bt_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/english"
+            android:background="@drawable/button_blue"/>
+</LinearLayout>
