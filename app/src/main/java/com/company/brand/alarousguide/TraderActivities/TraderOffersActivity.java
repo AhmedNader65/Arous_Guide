@@ -247,7 +247,7 @@ public class TraderOffersActivity extends AppCompatActivity implements View.OnCl
                 startActivity(new Intent(this , AdvertisingMethodActivity.class));
                 break;
             case 2:
-                startActivity(new Intent(this , MarkOfferLocationActivity.class));
+                startActivity(new Intent(this , AddOfferDataActivity.class));
                 break;
             case 3:
                 startActivity(new Intent(this , GiftsActivity.class));
