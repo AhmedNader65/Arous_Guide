@@ -83,6 +83,7 @@ public class AlertsActivity extends AppCompatActivity implements View.OnClickLis
         layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         pb_progressBar = (ProgressBar) findViewById(R.id.pb_progressBar);
         tv_notFoundOffers.setTypeface(Fonts.mSetupFontBold(this));
+        tv_Gifts.setTypeface(Fonts.mSetupFontBold(this));
         tv_no_internet.setTypeface(Fonts.mSetupFontMedium(this));
         bt_retry.setTypeface(Fonts.mSetupFontMedium(this));
         mSetupToasts();

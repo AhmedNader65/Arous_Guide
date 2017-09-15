@@ -208,6 +208,7 @@ public class Account_settings extends AppCompatActivity {
         private void setTypeFaces(){
 
             binding.title.setTypeface(Fonts.mSetupFontBold(this));
+            binding.BTSave.setTypeface(Fonts.mSetupFontBold(this));
             binding.ETOldPassword.setTypeface(Fonts.mSetupFontRegular(this));
             binding.ETNewPassword.setTypeface(Fonts.mSetupFontRegular(this));
             binding.ETPasswordConfirm.setTypeface(Fonts.mSetupFontRegular(this));

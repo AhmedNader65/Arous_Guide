@@ -120,4 +120,5 @@
 
     <string name="offerFrom">العرض مقدم من</string>
     <string name="mobileAndEmailExist">رقم الجوال والبريد الالكتروني موجودين بالفعل</string>
+    <string name="view_trader_location">Trader Location</string>
 </resources>

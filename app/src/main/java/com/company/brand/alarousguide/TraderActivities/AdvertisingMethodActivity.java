@@ -23,6 +23,7 @@ public class AdvertisingMethodActivity extends AppCompatActivity {
         binding.txt6.setTypeface(Fonts.mSetupFontBold(this));
         binding.txt7.setTypeface(Fonts.mSetupFontBold(this));
         binding.txt8.setTypeface(Fonts.mSetupFontBold(this));
+        binding.tvMyProfile.setTypeface(Fonts.mSetupFontBold(this));
         binding.ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
